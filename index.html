@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="description of your web page" />
+  <meta name="keywords" content="keywords for search engines" />
+  <link rel="stylesheet" type="text/css" href="css/nav.css" />
+  <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
+</head>
+<body>
+	<header>
+    <div id="container">
+      <div><img src="img/flower.png" alt="music abc"></div>
+      <div><h1 id="name">MUSIC ABC</h1></div>
+    </div>
+    <div style="font-size:16px"><h2>A Musician Starter Pack</h2></div>
+  </header>
+  <div id="nav">
+    <div id="menu" onmouseover="displaysidenav()"
+    onmouseout="hidesidenav()" >
+      <div style="padding:0px">Theory</div>
+      <span id="menu-drpdwn">
+        <ul id="drpdwn-list">
+        </ul>
+      </span>
+    </div>
+    <div><a>Exercise</a></div>
+    <div><a>About</a></div>
+    <div><a>Donate</a></div>
+  </div>
+  <div id="sidenav">   
+  </div>
+  <main id="bodycontainer">
+    <div id="mid">
+      <p>shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hhhh</p>
+      <p>s</p>
+      <p>3</p>
+    </div>
+  </main>
+
+  <div id="foot">
+    <div>g</div>
+  </div>
+  
+  <script> 
+  var horibar = document.getElementById("nav").offsetHeight;
+  function displaysidenav(){
+    document.getElementById("menu-drpdwn").style.display="block";
+    document.getElementById("menu-drpdwn").style.height=
+    window.innerHeight - horibar + "px";
+  }
+  function hidesidenav(){
+    document.getElementById("menu-drpdwn").style.display="none";
+  }
+  (function(){
+    var elem = document.getElementById("sidenav");
+    elem.style.height= window.innerHeight - horibar + "px";
+  })();
+
+  </script>
+  <script src="default.js"></script>
+</body>
+
+</html>
